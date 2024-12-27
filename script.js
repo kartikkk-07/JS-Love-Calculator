@@ -6,7 +6,7 @@ function calculateLove(){
     if(name1==="" || name2 ===""){  
         alert("Please enter name in both name-fields.");
     } else{
-        const lovePercentage = Math.floor(Math.random() * 50) + 50;
+        const lovePercentage = Math.floor(Math.random() * 61) + 40;
         const result = document.getElementById("result");
 
         result.innerHTML = `${name1} and ${name2} 's Love Percentage: ${lovePercentage}`;
