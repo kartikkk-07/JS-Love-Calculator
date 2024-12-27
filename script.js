@@ -6,14 +6,14 @@ function calculateLove(){
     if(name1==="" || name2 ===""){  
         alert("Please enter both names.");
     } else{
-        const lovePercentage = Math.floor(Math.random() * 101);
+        const lovePercentage = Math.floor(Math.random() * 50) + 50;
         const result = document.getElementById("result");
 
         result.innerHTML = `${name1} and ${name2} 's Love Percentage: ${lovePercentage}`;
 
-        if(lovePercentage < 30){
+        if(lovePercentage < 60){
             result.innerHTML += "<br> Not a Great Match. Keep Looking!"
-        } else if(lovePercentage >= 30 && lovePercentage < 70){
+        } else if(lovePercentage >= 60 && lovePercentage < 80){
             result.innerHTML += "<br> There is potential. Give it a try!"
         } else{
             result.innerHTML += "<br> Great Match! Love is in the Air!"
